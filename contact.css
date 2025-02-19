@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+    font-family: 'Intro Regular Alt';
+    src: url('Intro\ Regular\ Alt.otf') format('opentype');
+    font-weight: 300;
+    font-style: bold;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Intro Regular Alt', sans-serif;
+    font-style: bold;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #D8BFD8;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    margin-left: -70px;
+    pointer-events: none;
+}
+
+/* Navbar */
+.navbar a {
+    position: relative;
+    font-size: 30px;
+    font-style: bold;
+    color: #fff;
+    font-weight: 1000;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Navbar decline thing under ABOUT */
+.navbar span {
+    background-color: #fff;
+    border-radius: 30px;
+    color: #D8BFD8;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.no-underline:hover::before {
+    content: none;
+}
+
+.bigwhiterectangle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+/* like envelope back */
+.envelope-back {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(10%);
+    width: 1100px;
+    height: 600px;
+    background-color: #B0E0E6;
+    font-family: 'Intro Regular Alt', sans-serif;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+/* Big white triangle that looks like envelope flap */
+.envelope-closer {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(-70%);
+    width: 0;
+    height: 0;
+    border-left: 550px solid transparent;
+	border-right: 550px solid transparent;
+	border-top: 200px solid #fff;
+    z-index: 4;
+    border-radius: 40px;
+}
+
+.envelope-closer h1 {
+    color: #033C43;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(-90%);
+    font-size: 70px;
+    text-align: center;
+    font-style: bold;
+    line-height: 60px;
+}
+
+.envelope-letter {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(30%);
+    width: 800px;
+    height: 500px;
+    background-color: #C4C4C4;
+    font-family: 'Intro Regular Alt', sans-serif;
+    color: #87ABAF;
+    font-style: bold;
+    z-index: 3;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form section */
+  form {
+    top: 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    padding: 2vw 4vw;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  form input, form textarea {
+    border-width: 5px;
+    border-color: #006A73;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    font-size: 16px;
+    font-family: 'Intro Regular Alt', sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+    outline-style: single;
+    outline-color: #fff;
+    outline-width: 10px;
+    width: 100%;
+    
+  }
+
+  form textarea {
+    height: 200px; 
+    resize: none; 
+}
+
+  .contact-inputs::placeholder {
+    color: #9DB4B6;
+  }
+
+  form button {
+    font-family: 'Intro Regular Alt', sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    background: #033C43;
+    outline-style: single;
+    outline-width: 10px;
+    outline-color: #fff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+    margin: 5px auto 0;
+    border-radius: 30px;
+    display: block;
+  }
