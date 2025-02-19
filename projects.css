@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #B0E0E6;
+}
+
+.bigwhiterectangle {
+    background: linear-gradient(135deg, #B0E0E6 0%, #dcd0ff 100%);
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.green-blob, .grey-blob, .pink-blob {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    height: auto;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 80%; 
+    margin-bottom: 20px;
+}
+
+.scroll-arrow {
+    margin-top: 10px;
+}
+
+.scroll-arrow img {
+    width: 40px;
+    animation: bounce 1.5s infinite;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow-container i {
+    font-size: 30px;
+    color: #B0E0E6;
+    animation: bounce 1.5s infinite;
+}
+
+.project-description {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .bigwhiterectangle {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .arrow-container i {
+        font-size: 25px;
+    }
+}
